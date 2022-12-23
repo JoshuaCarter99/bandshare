@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS bandShare_db;
+CREATE DATABASE bandShare_db;

@@ -1,0 +1,29 @@
+:root {
+  --col-bg: #2C3E50;
+  /* element bg */
+  --col-surface: #34495E;
+  /* one level up */
+  --col-surface2: #395C84;
+  /* primary colors */
+  --col-p-200: hsl(168, 76%, 48%);
+  --col-p-500: #16A085;
+  --col-p-700: hsl(168, 76%, 24%);
+  /* secondary colors */
+  --col-s-200: hsl(145, 63%, 56%);
+  --col-s-500: #27AE60;
+  --col-s-700: hsl(145, 63%, 28%);
+
+  /* text colors */
+  --col-on-surface: #ECF0F1;
+  --col-on-primary: #1a1b26;
+  --col-on-secondary: #1a1b26;
+}
+body {
+  background-color: var(--col-bg);
+  color: var(--col-on-surface);
+
+  font-family: var(--ff);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
