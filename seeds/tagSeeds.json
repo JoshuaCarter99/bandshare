@@ -1,0 +1,30 @@
+[
+    {
+        "post_id": 1,
+        "tag_name": "electronic"
+    },
+    {
+        "post_id": 2,
+        "tag_name": "jazz"
+    },
+    {
+        "post_id": 2,
+        "tag_name": "loop"
+    },
+    {
+        "post_id": 3,
+        "tag_name": "crunchy"
+    },
+    {
+        "post_id": 3,
+        "tag_name": "fast"
+    },
+    {
+        "post_id": 4,
+        "tag_name": "WIP"
+    },
+    {
+        "post_id": 5,
+        "tag_name": "smooth"
+    }
+]

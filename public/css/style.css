@@ -1,24 +1,25 @@
 :root {
-  --col-bg: #2C3E50;
+  --col-bg: #1c1c1c;
   /* element bg */
-  --col-surface: #34495E;
+  --col-surface: #242424;
   /* one level up */
-  --col-surface2: #395C84;
+  --col-surface2: #4a4a4a;
   /* primary colors */
-  --col-p-200: hsl(168, 76%, 48%);
-  --col-p-500: #16A085;
-  --col-p-700: hsl(168, 76%, 24%);
+  --col-p-200: #a4aa83;
+  --col-p-500: #839c45;
+  --col-p-700: #465b2a;
   /* secondary colors */
-  --col-s-200: hsl(145, 63%, 56%);
-  --col-s-500: #27AE60;
-  --col-s-700: hsl(145, 63%, 28%);
+  --col-s-200: #83aa91;
+  --col-s-500: #459c6f;
+  --col-s-700: #2a5b48;
 
   /* text colors */
-  --col-on-surface: #ECF0F1;
-  --col-on-primary: #1a1b26;
-  --col-on-secondary: #1a1b26;
+  --col-on-surface: #bdbdbd;
+  --col-on-primary: #1a1a1a;
+  --col-on-secondary: #1a1a1a;
 }
 body {
+  background-image: url('../images/Background.png');
   background-color: var(--col-bg);
   color: var(--col-on-surface);
 
