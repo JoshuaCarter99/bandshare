@@ -1,7 +1,14 @@
-<div class="card my-3">
-  <h5 class="card-header">{{user.username}}</h5>
-  <div class="card-body">
-    <h5 class="card-title">{{song_name}}</h5>
+  <h5 class="card-title">{{user.username}}</h5>
+    <p class="card-text">{{song_name}}</p>
     <p class="card-text">{{audio_file}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Artists</li>
+    <li class="list-group-item">Album</li>
+    <li class="list-group-item">Release Date</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Spotify Link</a>
+    <a href="#" class="card-link">YouTube Link</a>
   </div>
 </div>
