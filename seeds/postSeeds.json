@@ -1,37 +1,31 @@
 [
     {
         "song_name": "Opposite Sides",
-        "tag_id": 2,
         "user_id": 1,
         "audio_file": "https://res.cloudinary.com/dlvmcylti/video/upload/v1672376058/Ocoeur_-_Opposite_Sides_-_2A_-_131_dmblvf.flac"
     },
     {
         "song_name": "Opposite Sides VIP",
-        "tag_id": 1,
         "user_id": 1,
         "audio_file": "https://res.cloudinary.com/dlvmcylti/video/upload/v1672376058/Ocoeur_-_Opposite_Sides_-_2A_-_131_dmblvf.flac"
     },
     {
         "song_name": "Opposite Sides MVP",
-        "tag_id": 3,
         "user_id": 2,
         "audio_file": "https://res.cloudinary.com/dlvmcylti/video/upload/v1672376058/Ocoeur_-_Opposite_Sides_-_2A_-_131_dmblvf.flac"
     },
     {
         "song_name": "Opposite Sides v2",
-        "tag_id": 4,
         "user_id": 3,
         "audio_file": "https://res.cloudinary.com/dlvmcylti/video/upload/v1672376058/Ocoeur_-_Opposite_Sides_-_2A_-_131_dmblvf.flac"
     },
     {
         "song_name": "Opposite Sides v3",
-        "tag_id": 4,
         "user_id": 4,
         "audio_file": "https://res.cloudinary.com/dlvmcylti/video/upload/v1672376058/Ocoeur_-_Opposite_Sides_-_2A_-_131_dmblvf.flac"
     },
     {
         "song_name": "Opposite Sides v4",
-        "tag_id": 5,
         "user_id": 5,
         "audio_file": "https://res.cloudinary.com/dlvmcylti/video/upload/v1672376058/Ocoeur_-_Opposite_Sides_-_2A_-_131_dmblvf.flac"
     }

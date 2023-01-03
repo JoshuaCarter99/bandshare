@@ -22,9 +22,6 @@ Post.init(
         key: 'id',
       },
     },
-    date_created: {
-        type: DataTypes.DATE,
-    },
     audio_file: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -32,7 +29,7 @@ Post.init(
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'post',

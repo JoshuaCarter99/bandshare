@@ -1,6 +1,7 @@
 const User = require('./User');
 const Tag = require('./Tag');
 const Post = require('./Post');
+const PostTag = require('./PostTag');
 
 
 User.hasMany(Post, {
@@ -9,21 +10,18 @@ User.hasMany(Post, {
 });
 
 Post.belongsTo(User, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+  foreignKey: 'user_id'
 });
 
 Post.belongsToMany(Tag, {
-  through: 'post_tag',
   foreignKey: 'post_id',
-  onDelete: 'CASCADE'
+  through: PostTag
 });
 
 Tag.belongsToMany(Post, {
-  through: "post_tag",
   foreignKey: 'tag_id',
-  onDelete: 'CASCADE'
+  through: PostTag
 });
 
 
-  module.exports = { User, Tag, Post };
+  module.exports = { User, Tag, Post, PostTag };
