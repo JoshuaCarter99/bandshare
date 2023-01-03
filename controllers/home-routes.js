@@ -1,13 +1,13 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { User, Post, Tag } = require('../models');
+const { User, Post, Tag, PostTag } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
   console.log(req.session);
 
   Post.findAll({
-    attributes: ['id', 'song_name', 'tag_id', 'user_id', 'date_created', 'audio_file'],
+    attributes: ['id', 'song_name', 'tag_id', 'user_id', 'audio_file'],
     include: [
       {
         model: Tag,

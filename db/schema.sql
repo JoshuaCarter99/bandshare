@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS bandShare_db;
-CREATE DATABASE bandShare_db;
+DROP DATABASE IF EXISTS bandshare_db;
+CREATE DATABASE bandshare_db;
