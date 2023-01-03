@@ -28,4 +28,7 @@ Tag.init(
   }
 );
 
+const tagsArray = Object.values(Tag);
+console.log(tagsArray);
 module.exports = Tag;
+exports = {tagsArray};

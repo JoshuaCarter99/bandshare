@@ -6,23 +6,32 @@ const withAuth = require('../utils/auth');
 router.get('/', (req, res) => {
   console.log(req.session);
 
+  // Tag.findAll({
+  //   attributes: ['id', 'tag_name'],
+    
+  //   where: {
+  //     post_id: this.post.id,
+  //   }
+  // })
+
+
   Post.findAll({
-    attributes: ['id', 'song_name', 'tag_id', 'user_id', 'audio_file'],
+
+    attributes: ['id', 'song_name', 'user_id', 'audio_file'],
     include: [
       {
         model: Tag,
-        attributes: ['id', 'post_id', 'tag_name'],
-        include: {
-          model: User,
-          attributes: ['id', 'username'],
-        },
+        attributes: ['id', 'tag_name'],
+        through: PostTag,
+        as: 'tags',
       },
       {
         model: User,
         attributes: ['username']
-      }
+      },
     ],
   })
+  
     .then((dbPostData) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
       res.render('homepage', {
@@ -34,7 +43,9 @@ router.get('/', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+    // console.log(tags);
 });
+
 
 router.get('/login', (req, res) => {
   // If a session exists, redirect the request to the homepage
