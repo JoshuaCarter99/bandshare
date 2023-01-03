@@ -8,15 +8,13 @@ router.get('/', (req, res) => {
 
   // Tag.findAll({
   //   attributes: ['id', 'tag_name'],
-    
+
   //   where: {
   //     post_id: this.post.id,
   //   }
   // })
 
-
   Post.findAll({
-
     attributes: ['id', 'song_name', 'user_id', 'audio_file'],
     include: [
       {
@@ -27,15 +25,23 @@ router.get('/', (req, res) => {
       },
       {
         model: User,
-        attributes: ['username']
+        attributes: ['username'],
       },
     ],
   })
-  
+
     .then((dbPostData) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
+      const postTags = dbPostData.map((post) => {
+        post.tags.forEach((tag) => {
+          console.log(tag.tag_name);
+        });
+        return post.get({ plain: true });
+      });
+
       res.render('homepage', {
         posts,
+        postTags,
         logged_in: req.session.logged_in,
       });
     })
@@ -43,9 +49,7 @@ router.get('/', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-    // console.log(tags);
 });
-
 
 router.get('/login', (req, res) => {
   // If a session exists, redirect the request to the homepage
