@@ -7,7 +7,7 @@
   
   --col-bg: #1c1c1c;
   /* element bg */
-  --col-surface: #2e2e2e;
+  --col-surface: #292929;
   /* one level up */
   --col-surface2: #4a4a4a;
   /* primary colors */
@@ -89,7 +89,7 @@ nav {
   box-shadow: 0 0 0 0.25rem var(--col-p-200);
 }
 .card-header {
-  color: var(--col-p-500);
+  color: var(--col-s-500);
   background-color: var(--col-surface);
   border-bottom: var(--line-3) solid var(--col-surface2);
   border-radius: calc(0.3rem + var(--line-3));
@@ -114,4 +114,9 @@ nav {
 .form-size {
   max-width: 960px;
 }
-
+.title-logo {
+  color: var(--col-p-500);
+}
+.title {
+  color: var(--col-s-500);
+}
