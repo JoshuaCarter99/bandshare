@@ -1,12 +1,6 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
-const cloudinary = require('cloudinary');
 
-cloudinary.config({
-  cloud_name: 'dlvmcylti',
-  api_key: '449562749791661',
-  api_secret: '10dV9KwAU9TLmizNrE9bv3ekBTk',
-});
 
 let sequelize;
 

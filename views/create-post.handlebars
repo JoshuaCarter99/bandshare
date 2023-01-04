@@ -1,18 +1,22 @@
 <section>
     <a href="/dashboard" class=""> &larr; back to dashboard</a>
-  <h2 class="title">New Post</h2><hr>
+  <h2 class="title">Upload</h2><hr>
 
   <form class="new-post-form">
     <div class="mb-3">
-      <label for="post-title" class="form-label">Title</label>
-      <input class="form-control" type="text" id="post-title" name="post-title" placeholder="insert blog title here"/>
+      <label for="track-name" class="form-label">Track Name</label>
+      <input class="form-control" type="text" id="track-name" name="track-name" placeholder="track name"/>
     </div>
     <div class="mb-3">
-      <label for="post-content" class="form-label">Content</label>
-      <input class="form-control" id="post-content" name="post-content" placeholder="insert blog content here"/>
+      <label for="tag-name" class="form-label">Tag</label>
+      <input type='text' class="form-control" id="tag-name" name="tag-name" placeholder="WIP"/>
     </div>
-    <button type="submit" class="btn btn-primary">Create Post</button>
+    <div class="mb-3">
+      <label for="file-upload" class="form-label">Audio File</label>
+      <input type='file' accept='audio/*' class="form-control" id="file-upload" name="file-upload"/>
+    </div>
+    <button type="click" class="btn btn-primary" id="cloudinaryUpload" >Upload</button>
   </form>
 </section>
 
-<script src="/js/newPost.js"></script>
+<script src="/js/upload.js"></script>
