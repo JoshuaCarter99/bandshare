@@ -5,15 +5,6 @@ const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
   console.log(req.session);
-
-  // Tag.findAll({
-  //   attributes: ['id', 'tag_name'],
-
-  //   where: {
-  //     post_id: this.post.id,
-  //   }
-  // })
-
   Post.findAll({
     attributes: ['id', 'song_name', 'user_id', 'audio_file'],
     include: [
