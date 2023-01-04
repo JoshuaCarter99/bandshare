@@ -1,21 +1,22 @@
 <section>
     <a href="/dashboard" class=""> &larr; back to dashboard</a>
-  <h2 class="title">Upload</h2><hr>
+  <h2 class="title d-flex ">Upload</h2><hr>
 
-  <form class="new-post-form">
-    <div class="mb-3">
+  <form class="new-post-form container-fluid m-auto">
+    <div class="mb-3 m-auto form-size">
       <label for="track-name" class="form-label">Track Name</label>
       <input class="form-control" type="text" id="track-name" name="track-name" placeholder="track name"/>
     </div>
-    <div class="mb-3">
+    <div class="mb-3 m-auto form-size">
       <label for="tag-name" class="form-label">Tag</label>
       <input type='text' class="form-control" id="tag-name" name="tag-name" placeholder="WIP"/>
     </div>
-    <div class="mb-3">
+    <div class="mb-3 m-auto form-size">
       <label for="file-upload" class="form-label">Audio File</label>
-      <input type='file' accept='audio/*' class="form-control" id="file-upload" name="file-upload"/>
+      <input type='file' accept='audio/*' class="form-control mb-4" id="file-upload" name="file-upload"/>
+    <button type="click" class="btn btn-primary " id="cloudinaryUpload" >Upload</button>
     </div>
-    <button type="click" class="btn btn-primary" id="cloudinaryUpload" >Upload</button>
+    
   </form>
 </section>
 

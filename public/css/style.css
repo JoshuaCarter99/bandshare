@@ -99,4 +99,8 @@ a:hover {
   background-color: var(--col-surface);
   border: var(--line-3) solid var(--col-surface2);
   border-radius: 0.3rem;
+  max-width: 960px;
+}
+.form-size {
+  max-width: 960px;
 }

@@ -10,7 +10,7 @@ router.get('/', withAuth, (req, res) => {
       // use the ID from the session
       user_id: req.session.user_id,
     },
-    attributes: ['id', 'song_name', 'user_id', 'audio_file'],
+    attributes: ['id', 'song_name', 'user_id', 'audio_file', 'created_at'],
     include: [
       {
         model: Tag,
@@ -50,7 +50,7 @@ router.get('/create', withAuth, (req, res) => {
       // use the ID from the session
       user_id: req.session.user_id,
     },
-    attributes: ['id', 'song_name', 'user_id', 'audio_file'],
+    attributes: ['id', 'song_name', 'user_id', 'audio_file', 'created_at'],
     include: [
       {
         model: Tag,
