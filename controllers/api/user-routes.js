@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   User.create({
     username: req.body.username,
     email: req.body.email,
@@ -26,6 +26,8 @@ router.post('/', (req, res) => {
       console.log(req.session);
       res.json(userData);
     });
+  }).catch((err) => {
+    res.status(400).json({ message: err.message });
   });
 });
 
