@@ -4,7 +4,7 @@
 var myWidget = cloudinary.createUploadWidget(
   {
     cloudName: 'dq3bdy0oj',
-    uploadPreset: 'soundByte',
+    uploadPreset: 'soundbyte',
   },
   async (error, result) => {
     if (!error && result && result.event === 'success') {
