@@ -42,6 +42,9 @@ a {
 a:hover {
   color: var(--col-p-200);
 }
+nav {
+  border-bottom: var(--line-2) solid var(--col-surface2);
+}
 .btn-primary {
   color: var(--col-on-primary);
   background-color: var(--col-p-500);
