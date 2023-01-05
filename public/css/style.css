@@ -169,6 +169,18 @@ footer h6 {
   justify-content: flex-end;
   margin-top: 3px;
 }
+.text {
+  margin: 20px;
+  padding: 40px;
+  align-self: center;
+  justify-content: center;
+}
+.signup {
+  margin-right: 20px;
+}
+.login {
+  margin-right: 20px;
+}
 footer {
   background-color: #1a1a1a;
   bottom: 0;
