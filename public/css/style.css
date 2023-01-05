@@ -120,3 +120,11 @@ nav {
 .title {
   color: var(--col-s-500);
 }
+.songImage {
+  transform: scale(140%);
+}
+.SongImgContainer {
+  width: 100px;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}

@@ -4,6 +4,8 @@
     <h5 class="mb-0">{{format_date created_at}}</h5>
   </div>
   <div class='card-body'>
+    <div class="SongImgContainer"><img class="songImage" src="https://source.boringavatars.com/bauhaus/100/{{song_name}}?colors=bdbdbd,a4aa83,839c45,465b2a,83aa91,459c6f,2a5b48,1c1c1c" alt=""></div>
+    
     {{!-- <h5 class='card-title'>{{song_name}}</h5> --}}
     <a href='{{audio_file}}'class='text-decoration-none'><h5 class='card-text mb-3 '>{{song_name}}</h5></a>
     {{#each tags}}
