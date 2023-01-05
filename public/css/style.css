@@ -175,13 +175,13 @@ footer {
   width: 100%;
   text-align: center;
 }
-<<<<<<< HEAD
 
 .container a {
   margin-bottom: 5px;
   text-decoration: none;
   font-size: 2rem;
-=======
+}
+
 audio {
   height: 32px;
   min-width: 12rem;
@@ -190,7 +190,6 @@ audio {
 }
 audio::-webkit-media-controls-panel {
   background-color: var(--col-s-200);
->>>>>>> f5ca7a72d0ee8453a89907393089b8022660b14c
 }
 
 
