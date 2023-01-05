@@ -29,6 +29,8 @@
 body {
   background-color: var(--col-bg);
   color: var(--col-on-surface);
+  background-image: url(../images/Background.png);
+  background-size: cover;
 
   font-family: var(--ff);
 }
@@ -169,6 +171,9 @@ nav {
   display: flex;
   justify-content: flex-end;
   margin-top: 3px;
+}
+.footer {
+  background-color: #1a1a1a;
 }
 
 
