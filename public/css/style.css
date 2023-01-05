@@ -3,13 +3,15 @@
 
   --line-2: 0.125rem;
   --line-3: 0.2rem;
-  --line-4: 1.25rem;
-  
+  --line-4: 0.25rem;
+
   --col-bg: #1c1c1c;
   /* element bg */
   --col-surface: #292929;
   /* one level up */
   --col-surface2: #4a4a4a;
+  /* two levels up */
+  --col-surface3: #727272;
   /* primary colors */
   --col-p-200: #a4aa83;
   --col-p-500: #839c45;
@@ -25,9 +27,6 @@
   --col-on-secondary: #1a1a1a;
 }
 body {
-  /* background-image: url('../images/Background.png');
-  background-size: cover;
-  background-position: center; */
   background-color: var(--col-bg);
   color: var(--col-on-surface);
 
@@ -43,6 +42,7 @@ a:hover {
   color: var(--col-p-200);
 }
 nav {
+  background-color: var(--col-surface);
   border-bottom: var(--line-2) solid var(--col-surface2);
 }
 .btn-primary {
@@ -101,7 +101,7 @@ nav {
 .card {
   background-color: var(--col-surface);
   border: var(--line-3) solid var(--col-surface2);
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
   max-width: 960px;
 }
 .card-footer {
@@ -112,7 +112,7 @@ nav {
   margin-top: 5px;
 }
 .form-size {
-  max-width: 960px;
+  max-width: 720px;
 }
 .title-logo {
   color: var(--col-p-500);
@@ -122,9 +122,62 @@ nav {
 }
 .songImage {
   transform: scale(140%);
-}
-.SongImgContainer {
-  width: 100px;
-  overflow: hidden;
   border-radius: 0.25rem;
 }
+.imageContainer {
+  overflow: hidden;
+  border-radius: 0.25rem;
+  border: var(--line-3) solid var(--col-surface2);
+}
+.tag {
+  background-color: #ffffff20;
+  border-radius: 1rem;
+  text-shadow: var(--col-on-primary) 1px 2px;
+}
+.card-title {
+  color: var(--col-s-200);
+}
+.username {
+  color: var(--col-s-500);
+}
+.fa-solid {
+  color: var(--col-s-200);
+}
+.translate-middle {
+  transform: translate(-15%, -10%) !important;
+}
+.waveform {
+  width: 50%;
+}
+.input-group-text {
+  color: var(--col-surface2);
+  background-color: var(--col-on-surface);
+  border: 1px solid var(--col-on-surface);
+}
+.posted {
+  color: var(--col-surface3);
+}
+
+
+
+/* Media Query's */
+
+@media screen and (max-width: 690px) {
+  .translate-middle {
+    transform: translate(-5%, 50%) !important;
+  }
+  .waveform {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .translate-middle {
+    transform: translate(-5%, 50%) !important;
+  }
+  .waveform {
+    width: 0%;
+    visibility: hidden !important;
+  }
+}
+

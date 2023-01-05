@@ -1,10 +1,11 @@
-<h2 class="title pb-4 pt-3 d-flex justify-content-center">{{username}}</h2>
-
+<div class="profilePicContainer d-flex flex-column align-items-center">
+    <img class="mt-4" src="https://source.boringavatars.com/beam/160/{{username}}?colors=a4aa83,839c45,465b2a,83aa91,459c6f,2a5b48,bdbdbd" alt="">
+    <h2 class="title pb-4 pt-3 d-flex justify-content-center user-select-none">{{username}}</h2>    
+</div>
 {{#each posts as |post|}}
 <div class="container-fluid mx-3">
 {{> post-data post }}
 </div>
-
 {{else}}
-<h6 class="pb-4 d-flex justify-content-center">nothing to see here :(</h6>
+<h6 class="pb-4 d-flex justify-content-center">nothing to see here :(<br>post something!</h6>
 {{/each}}

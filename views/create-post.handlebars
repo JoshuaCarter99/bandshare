@@ -1,7 +1,6 @@
 <section>
 
-    {{!-- <a href="/dashboard" class=""> &larr; back to dashboard</a> --}}
-  <h2 class="title d-flex justify-content-center mb-0 pb-2 pt-3">Upload</h2>
+  <h2 class="title d-flex justify-content-center mb-0 pb-2 pt-3 user-select-none">Upload</h2>
 
   <form class="new-post-form container-fluid m-auto">
     <div class="mb-3 m-auto form-size">
@@ -10,7 +9,10 @@
     </div>
     <div class="mb-3 m-auto form-size">
       <label for="tag-name" class="form-label">Tag</label>
-      <input type='text' class="form-control mb-4" id="tag-name" name="tag-name" placeholder="WIP"/>
+      <div class="input-group">
+        <div class="input-group-text mb-4">#</div>
+       <input type='text' class="form-control mb-4" id="tag-name" name="tag-name" placeholder="WIP"/> 
+      </div>
       <button class="btn btn-primary " id="cloudinaryUpload" >Upload</button>
     </div>
     
