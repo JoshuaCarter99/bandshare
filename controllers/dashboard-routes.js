@@ -11,6 +11,7 @@ router.get('/', withAuth, (req, res) => {
       user_id: req.session.user_id,
     },
     attributes: ['id', 'song_name', 'user_id', 'audio_file', 'created_at'],
+    order: [['created_at', 'DESC']],
     include: [
       {
         model: Tag,

@@ -32,7 +32,7 @@
 
   <body class="d-flex flex-column min-vh-100">
     <nav class='navbar sticky-top mb-3'>
-      <div class='container-fluid d-flex'>
+      <div class='container-fluid d-flex justify-content-center justify-content-sm-between flex-column flex-sm-row'>
         <div class="d-flex">
         <a class="logo">
         <h2 class='m-0'><a
@@ -44,7 +44,7 @@
           {{#if logged_in}}
             <a
               href='/dashboard'
-              class='text-decoration-none mx-2 mb-0'
+              class='text-decoration-none mx-2 me-2 mb-0'
             ><b>Profile</b></a>
             <a href='/' class='text-decoration-none mx-2 mb-0'><b>Feed</b></a>
             <a

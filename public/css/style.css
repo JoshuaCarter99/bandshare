@@ -120,11 +120,13 @@ footer h6 {
 .songImage {
   transform: scale(140%);
   border-radius: 0.25rem;
+  aspect-ratio: 1 / 1;
 }
 .imageContainer {
   overflow: hidden;
   border-radius: 0.25rem;
   border: var(--line-3) solid var(--col-surface2);
+  aspect-ratio: 1 / 1;
 }
 .tag {
   background-color: #ffffff20;
@@ -144,7 +146,7 @@ footer h6 {
   transform: translate(-15%, -10%) !important;
 }
 .waveform {
-  width: 50%;
+  /* width: 50%; */
 }
 .input-group-text {
   color: var(--col-surface2);
@@ -156,8 +158,8 @@ footer h6 {
 }
 .logo {
   background-image: url(../images/music-cd.svg);
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   background-size: cover;
   margin-right: 15px;
   margin-left: 15px;
@@ -173,32 +175,48 @@ footer {
   width: 100%;
   text-align: center;
 }
+<<<<<<< HEAD
 
 .container a {
   margin-bottom: 5px;
   text-decoration: none;
   font-size: 2rem;
+=======
+audio {
+  height: 32px;
+  min-width: 12rem;
+  max-width: 16rem;
+  display: block;
+}
+audio::-webkit-media-controls-panel {
+  background-color: var(--col-s-200);
+>>>>>>> f5ca7a72d0ee8453a89907393089b8022660b14c
 }
 
 
 /* Media Query's */
 
-@media screen and (max-width: 690px) {
-  .translate-middle {
-    transform: translate(-5%, 50%) !important;
-  }
+@media screen and (max-width: 720px) {
   .waveform {
-    width: 50%;
+    visibility: hidden;
   }
 }
-
-@media screen and (max-width: 520px) {
-  .translate-middle {
-    transform: translate(-5%, 50%) !important;
+@media screen and (max-width: 500px) {
+  .songImage {
+    width: 10rem;
   }
-  .waveform {
-    width: 0%;
-    visibility: hidden !important;
+  audio {
+    min-width: 8rem;
+    max-width: 12rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .songImage {
+    width: 20rem;
+  }
+  audio {
+    min-width: 7rem;
+    max-width: 7rem;
   }
 }
 
