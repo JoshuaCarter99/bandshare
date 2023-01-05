@@ -1,13 +1,19 @@
-<div class='card m-auto mb-3'>
-  <div class="card-header d-flex justify-content-between">
-    <h5 class='mb-0'>{{user.username}}</h5>
-    <h5 class="mb-0">{{format_date created_at}}</h5>
+<div class='card m-auto my-3 d-flex flex-row justify-content-start'>
+  <div class="imageContainer m-3">
+    <img src="https://source.boringavatars.com/bauhaus/100/{{song_name}}?colors=a4aa83,839c45,465b2a,83aa91,459c6f,2a5b48,bdbdbd" class="songImage m-auto" alt="...">
   </div>
-  <div class='card-body'>
-    {{!-- <h5 class='card-title'>{{song_name}}</h5> --}}
-    <a href='{{audio_file}}'class='text-decoration-none'><h5 class='card-text mb-3 '>{{song_name}}</h5></a>
+  <div class="m-3">
+    <h4 class="card-title mb-0  user-select-none">{{song_name}}</h4>
+    <p class="mb-4 username  user-select-none">{{user.username}}</p>
+    <a target="_blank" href="{{audio_file}}"><i class="fa-solid fa-play fa-xl"></i></a>
+    <img class="waveform position-absolute top-50 start-50 translate-middle" src="{{format_url audio_file}}" alt="">
+    <div class="position-absolute top-0 end-0 m-3">
     {{#each tags}}
-     <h6>#{{tag_name}}</h6> 
+     <h6 class="tag px-2 py-1 user-select-none">#{{tag_name}}</h6> 
     {{/each}}
+  </div>
+  <div class="position-absolute bottom-0 end-0">
+    <p class="mb-0 py-1 px-2 posted">{{format_date created_at}}</p>
+  </div>
   </div>
 </div>
