@@ -104,6 +104,7 @@ nav {
   background-color: var(--col-surface);
   border: var(--line-3) solid var(--col-surface2);
   border-radius: 0.25rem;
+  width: 90%;
   max-width: 960px;
 }
 .card-footer {
@@ -186,6 +187,7 @@ audio {
 audio::-webkit-media-controls-panel {
   background-color: var(--col-s-200);
 }
+
 
 
 /* Media Query's */
