@@ -31,7 +31,6 @@ body {
   color: var(--col-on-surface);
   background-image: url(../images/Background.png);
   background-size: cover;
-
   font-family: var(--ff);
 }
 ::-webkit-scrollbar {
@@ -106,11 +105,7 @@ nav {
   border-radius: 0.25rem;
   max-width: 960px;
 }
-.card-footer {
-  width: 100vw;
-  height: 13rem;
-}
-.card-footer h6 {
+footer h6 {
   margin-top: 5px;
 }
 .form-size {
@@ -172,10 +167,18 @@ nav {
   justify-content: flex-end;
   margin-top: 3px;
 }
-.footer {
+footer {
   background-color: #1a1a1a;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
+.container a {
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 2rem;
+}
 
 
 /* Media Query's */

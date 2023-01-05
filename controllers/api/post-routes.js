@@ -22,26 +22,29 @@ cloudinary.config({
 router.post('/upload', withAuth, async (req, res) => {
   console.log(req.body);
   try {
-    Post.create({
+    
+    const post = await Post.create({
       song_name: req.body.song_name,
       user_id: req.session.user_id,
       audio_file: req.body.audio_file,
     });
-    Tag.create({
+    const tag = await Tag.create({
       tag_name: req.body.tag_name,
-    })
-    // PostTag.create({
-
-    // })
-
-    .then((postData) => {
-      req.session.save(() => {
-      req.session.user_id = postData.id;
-      req.session.username = postData.username;
-      req.session.logged_in = true;
-      req.session.tag_name = postData.tag_name;  
-      });
     });
+    
+    const postTag = await PostTag.create({
+      tag_id: tag.id,
+      post_id: post.id,
+    })
+    res.json({post, tag})
+    // .then((postData) => {
+      // req.session.save(() => {
+      // req.session.user_id = post.id;
+      // // req.session.username = post.username;
+      // // req.session.logged_in = true;
+      // req.session.tag_name = tag.tag_name;  
+      // });
+    // });
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
@@ -56,8 +59,6 @@ router.post('/upload', withAuth, async (req, res) => {
     //tag create
     //posttag create 
     //in try catch
-    
-    res.json(req.body)
 
     // cloudinary.uploader.upload("", (error, result) => {
     //   console.log("Result", result);
