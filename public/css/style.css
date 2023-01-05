@@ -157,6 +157,19 @@ nav {
 .posted {
   color: var(--col-surface3);
 }
+.logo {
+  background-image: url(../images/music-cd.svg);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.text-decoration-none {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3px;
+}
 
 
 
