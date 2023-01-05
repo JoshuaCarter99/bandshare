@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
       const postTags = dbPostData.map((post) => {
         post.tags.forEach((tag) => {
-          console.log(tag.tag_name);
+          // console.log(tag.tag_name);
         });
         return post.get({ plain: true });
       });
