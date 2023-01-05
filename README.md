@@ -1,4 +1,4 @@
-# Sound Byte
+# 🎹 Sound Byte
 
 ![GitHub top language](https://img.shields.io/github/languages/top/JoshuaCarter99/bandshare?color=459c6f)
 ![GitHub language count](https://img.shields.io/github/languages/count/JoshuaCarter99/bandshare?color=459c6f)
@@ -7,6 +7,8 @@
 ## Description
 
 A simple way to upload your audio files and share with your peers
+
+📱 Visit the deployed site [Sound Byte](https://soundbyte.herokuapp.com/) 📱
 
 - [Installation](#installation)
 - [Usage](#usage)
