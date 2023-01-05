@@ -125,11 +125,13 @@ nav {
 .songImage {
   transform: scale(140%);
   border-radius: 0.25rem;
+  aspect-ratio: 1 / 1;
 }
 .imageContainer {
   overflow: hidden;
   border-radius: 0.25rem;
   border: var(--line-3) solid var(--col-surface2);
+  aspect-ratio: 1 / 1;
 }
 .tag {
   background-color: #ffffff20;
@@ -149,7 +151,7 @@ nav {
   transform: translate(-15%, -10%) !important;
 }
 .waveform {
-  width: 50%;
+  /* width: 50%; */
 }
 .input-group-text {
   color: var(--col-surface2);
@@ -161,8 +163,8 @@ nav {
 }
 .logo {
   background-image: url(../images/music-cd.svg);
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   background-size: cover;
   margin-right: 15px;
   margin-left: 15px;
@@ -175,27 +177,40 @@ nav {
 .footer {
   background-color: #1a1a1a;
 }
-
+audio {
+  height: 32px;
+  min-width: 12rem;
+  max-width: 16rem;
+  display: block;
+}
+audio::-webkit-media-controls-panel {
+  background-color: var(--col-s-200);
+}
 
 
 /* Media Query's */
 
-@media screen and (max-width: 690px) {
-  .translate-middle {
-    transform: translate(-5%, 50%) !important;
-  }
+@media screen and (max-width: 720px) {
   .waveform {
-    width: 50%;
+    visibility: hidden;
   }
 }
-
-@media screen and (max-width: 520px) {
-  .translate-middle {
-    transform: translate(-5%, 50%) !important;
+@media screen and (max-width: 500px) {
+  .songImage {
+    width: 10rem;
   }
-  .waveform {
-    width: 0%;
-    visibility: hidden !important;
+  audio {
+    min-width: 8rem;
+    max-width: 12rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .songImage {
+    width: 20rem;
+  }
+  audio {
+    min-width: 7rem;
+    max-width: 7rem;
   }
 }
 
